@@ -2,3 +2,4 @@ streamlit>=1.0
 tensorflow>=2.8
 numpy
 pillow
+python-dotenv
