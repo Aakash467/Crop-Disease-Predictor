@@ -9,11 +9,18 @@ import os
 # Load model
 model = load_model("model.h5")
 
-# Class labels (update this list based on your actual training)
-class_names = sorted(os.listdir("combined_disease_dataset"))  # If available
-# OR manually define them:
-# class_names = ['Rice_Tungro', 'Rice_Blast', 'Wheat_Septoria', ...]
-
+# Class labels 
+class_names = [
+    'Rice_Bacterial Blight',
+    'Rice_Blast',
+    'Rice_Brown Spot',
+    'Rice_Tungro',
+    'Wheat_Brown Rust',
+    'Wheat_Loose Smut',
+    'Wheat_Septoria',
+    'Wheat_Healthy',
+    'Wheat_Yellow Rust'
+] 
 # App UI
 st.set_page_config(page_title="Crop Leaf Disease Classifier", layout="centered")
 st.title("🌾 Crop Leaf Disease Detection")
